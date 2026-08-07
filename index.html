@@ -2,13 +2,55 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <!-- ===== 强制禁用缓存（保证每次都是最新） ===== -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>西安Alice！社团</title>
     <style>
-        body{background:#f0f8ff;text-align:center;margin-top:100px}
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f8ff, #d4e9ff);
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+        .card {
+            max-width: 600px;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            box-shadow: 0 15px 40px rgba(0, 20, 40, 0.15);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h1 { color: #1a3a5c; font-size: 2.4rem; margin-bottom: 8px; }
+        .subtitle { color: #4a6a85; font-size: 1.2rem; border-bottom: 2px dashed #b0d4f0; padding-bottom: 15px; }
+        .content { color: #2c3e50; line-height: 1.8; margin: 25px 0; font-size: 1.05rem; }
+        .footer { margin-top: 25px; color: #7f9bb3; font-size: 0.9rem; border-top: 1px solid #e8f0fe; padding-top: 20px; }
+        .badge { display: inline-block; background: #1a3a5c; color: white; padding: 6px 18px; border-radius: 30px; font-size: 0.85rem; }
     </style>
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>使用GitHub Pages部署</p>
+    <div class="card">
+        <h1>西安Alice！</h1>
+        <p class="subtitle">一个无聊的人的小世界</p>
+        <p class="master">hector · Soap bubble 
+        <p class="master2">坎中野客
+        <div class="content">
+            <p>可能会有动漫 · 游戏 · 小说 · 名片的创作</p>
+            <p>使用 <strong>GitHub Pages</strong> 部署 <span style="color:#1a3a5c;"> 马夏 怡阳 の 最新版本已生效</span></p>
+        </div>
+        <span class="badge">2026 · 西安</span>
+        <div class="footer">— 停下追寻，击碎意义 —</div>
+    </div>
 </body>
 </html>
