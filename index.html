@@ -17,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             background: linear-gradient(135deg, #f0f8ff, #d4e9ff);
             font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         }
@@ -30,6 +31,20 @@
             text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.5);
             transition: transform 0.3s ease;
+        }
+
+        .wrapper{
+            display:flex;flex-direction:column;align-items:center;width:100%;
+        }
+        .red-bar{
+            width: 100vw;
+            height:60px;
+            background-color:#f8777d;
+            margin-top:30px;
+            border-radius: 8px; /*可选：圆角*/
+        }
+
+
         }
         .card:hover { transform: translateY(-5px); }
         h1 { color: #1a3a5c; font-size: 2.4rem; margin-bottom: 8px; }
@@ -51,10 +66,6 @@
         </div>
         <span class="badge">2026 · 西安</span>
         <div class="footer">— 停下追寻，击碎意义 —</div>
-        <!-- 背景装饰：引用仓库内的图片 -->
-        <div class="float-bg">🌸</div>
-        <div class="float-bg">⭐</div>
-        <div class="float-bg">🎮</div>
     </div>
 </body>
 </html>
